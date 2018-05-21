@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> Quizzes </title>
+</head>
+<body>
+     <h1><%= title %></h1>
+     <table>
+         <% for (var num =0 in quizzes){%>
+         <li>
+             <%=quizzes[num].question%>: <%=quizzes[num].answer%>
+         </li>
+
+         <%}%>
+
+     </table>
+</body>
+</html>
